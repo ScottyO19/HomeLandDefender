@@ -133,7 +133,7 @@ at a constant rate. */
 				/* They reached the end. You die. */
 				if((actor.getY() >= (getSceneHeight() - 159)))
 				{
-					reloadCurrentScene(createFadeOut(0.3), createFadeIn(0.3));
+					switchScene(GameModel.get().scenes.get(4).getID(), null, createCrossfadeTransition(.25));
 				}
 			}
 		});
