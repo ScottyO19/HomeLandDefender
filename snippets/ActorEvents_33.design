@@ -3,21 +3,18 @@
     <group eventID="1" id="0">
         <event-mouse-enter-exit-actor comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <create-actor3 comment="false" x="26" y="42">
-                    <actortype eid="51" id="0"/>
-                    <int id="1" val="5"/>
-                    <int id="2" val="5"/>
-                    <int id="3" val="0"/>
-                </create-actor3>
+                <set-game-val-4 comment="false" x="26" y="42">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-game-val-4>
             </group>
             <ACTOR eid="this" id="0"/>
             <int id="1" val="2"/>
         </event-mouse-enter-exit-actor>
     </group>
     <group eventID="1" id="6">
-        <if comment="false" x="32" y="91">
+        <if comment="false" x="26" y="155">
             <group eventID="1" id="-1">
-                <die comment="false" x="43" y="126">
+                <die comment="false" x="37" y="190">
                     <ACTOR eid="this" id="0"/>
                 </die>
             </group>
@@ -36,6 +33,14 @@
                 </eq>
             </or>
         </if>
+    </group>
+    <group eventID="1" id="7">
+        <create-actor3 comment="false" x="44" y="94">
+            <actortype eid="51" id="0"/>
+            <int id="1" val="5"/>
+            <int id="2" val="5"/>
+            <int id="3" val="0"/>
+        </create-actor3>
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
