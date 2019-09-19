@@ -10,6 +10,7 @@
     <actors>
         <actor a="0.0" aid="1" c="false" group="3" id="26" name="B_Menu 1" order="0" sx="1.0" sy="1.0" x="250" y="395" z="0"/>
         <actor a="0.0" aid="2" c="false" group="3" id="35" name="Replay 2" order="1" sx="1.0" sy="1.0" x="248" y="262" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="49" name="WinState 3" order="2" sx="1.0" sy="1.0" x="251" y="176" z="0"/>
     </actors>
     <snippets/>
     <terrain/>

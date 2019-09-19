@@ -224,4 +224,12 @@
             <poly data="4,0,0,271,0,271,90,0,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="40" fixedrot="false" fric="0.2" gid="3" id="49" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="WinState" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="50" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="50" name="WinState" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="46" id="0" loop="true" name="Animation 0" numframes="1" originx="72" originy="23" sync="false" version="2" width="145">
+            <poly data="4,0,0,145,0,145,46,0,46" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
 </pack>
