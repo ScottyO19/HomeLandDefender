@@ -95,6 +95,33 @@
             <poly data="4,0,0,160,0,160,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="38" fixedrot="false" fric="0.2" gid="3" id="47" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Bomber" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="48" static="false">
+        <snippets>
+            <s enabled="true" id="0">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="2" list="0" val="2"/>
+                <prop id="3" list="0" val="false"/>
+            </s>
+            <s enabled="true" id="1">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="2">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="10.0"/>
+                <prop id="2" list="0" val="1"/>
+                <prop id="3" list="0" val="11"/>
+                <prop id="5" list="0" val="5"/>
+                <prop id="6" list="0" val="13"/>
+                <prop id="7" list="0" val="0.7"/>
+                <prop id="8" list="0" val="15"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="48" name="Bomber" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="0" id="0" loop="true" name="Animation 0" numframes="1" originx="37" originy="31" sync="false" version="2" width="0">
+            <poly data="4,0,0,75,0,75,63,0,63" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="27" fixedrot="false" fric="0.2" gid="3" id="33" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Call to Assist" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="34" static="false">
         <snippets/>
     </actor>
