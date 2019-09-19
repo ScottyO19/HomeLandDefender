@@ -62,18 +62,54 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_5 extends SceneScript
+class SceneEvents_7 extends SceneScript
 {
+	public var _WinNumber:Float;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
+		nameMap.set("WinNumber", "_WinNumber");
+		_WinNumber = 0;
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== When Creating ========================= */
+		_WinNumber = 8;
+		
+		/* ======================= Member of Group ======================== */
+		addWhenTypeGroupKilledListener(getActorGroup(4), function(eventActor:Actor, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				_WinNumber = (_WinNumber - 1);
+			}
+		});
+		
+		/* =========================== Keyboard =========================== */
+		addKeyStateListener("ESC", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && pressed)
+			{
+				switchScene(GameModel.get().scenes.get(6).getID(), null, createCrossfadeTransition(.25));
+			}
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((_WinNumber < 1))
+				{
+					switchScene(GameModel.get().scenes.get(8).getID(), null, createCrossfadeTransition(.25));
+				}
+			}
+		});
 		
 	}
 	

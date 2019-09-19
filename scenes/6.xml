@@ -9,8 +9,8 @@
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="1" c="false" group="3" id="23" name="B_Settings 1" order="0" sx="1.0" sy="1.0" x="195" y="222" z="0"/>
-        <actor a="0.0" aid="2" c="false" group="3" id="21" name="B_Quit 2" order="1" sx="1.0" sy="1.0" x="196" y="349" z="0"/>
-        <actor a="0.0" aid="3" c="false" group="3" id="19" name="B_Start 3" order="2" sx="1.0" sy="1.0" x="196" y="101" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="21" name="B_Quit 5" order="1" sx="1.0" sy="1.0" x="193" y="361" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="19" name="B_Start 6" order="2" sx="1.0" sy="1.0" x="191" y="72" z="0"/>
     </actors>
     <snippets/>
     <terrain/>
