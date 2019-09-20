@@ -1,60 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="32" fixedrot="true" fric="0.2" gid="4" id="7" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Cruiser" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="8" static="false">
-        <snippets>
-            <s enabled="true" id="0">
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="2" list="0" val="1.2"/>
-                <prop id="3" list="0" val="false"/>
-            </s>
-            <s enabled="true" id="1">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="2">
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="1" list="0" val="4"/>
-                <prop id="2" list="0" val="4"/>
-                <prop id="3" list="0" val="11"/>
-                <prop id="5" list="0" val="3"/>
-                <prop id="6" list="0" val="13"/>
-                <prop id="7" list="0" val="3"/>
-                <prop id="8" list="0" val="15"/>
-            </s>
-        </snippets>
-    </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="8" name="Alien Cruiser" readable="false" shared="false">
-        <anim across="4" down="1" durations="50,50,50,50" height="64" id="0" loop="true" name="Animation 0" numframes="4" originx="32" originy="32" sync="false" version="1" width="256">
-            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
-        </anim>
-    </sprite>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="23" fixedrot="true" fric="0.2" gid="4" id="3" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Saucer" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="4" static="false">
-        <snippets>
-            <s enabled="true" id="0">
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="1" list="0" val="true"/>
-                <prop id="2" list="0" val="1.2"/>
-                <prop id="3" list="0" val="false"/>
-            </s>
-            <s enabled="true" id="1">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="2">
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="1" list="0" val="4"/>
-                <prop id="2" list="0" val="4"/>
-                <prop id="3" list="0" val="11"/>
-                <prop id="5" list="0" val="3"/>
-                <prop id="6" list="0" val="13"/>
-                <prop id="7" list="0" val="3"/>
-                <prop id="8" list="0" val="15"/>
-            </s>
-        </snippets>
-    </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="4" name="Alien Saucer" readable="false" shared="false">
-        <anim across="8" down="1" durations="100,100,100,100,100,100,100,100" height="64" id="0" loop="true" name="Animation 0" numframes="8" originx="32" originy="32" sync="false" version="1" width="512">
-            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
-        </anim>
-    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="20" fixedrot="false" fric="0.2" gid="3" id="26" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="B_Menu" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="27" static="false">
         <snippets/>
     </actor>
@@ -95,7 +40,7 @@
             <poly data="4,0,0,160,0,160,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="38" fixedrot="false" fric="0.2" gid="3" id="47" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Bomber" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="48" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="38" fixedrot="true" fric="0.2" gid="4" id="47" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Bomber" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="48" static="false">
         <snippets>
             <s enabled="true" id="0">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -146,6 +91,14 @@
     <music atlasID="0" desc="" id="15" loop="true" name="Explode" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="16" loop="true" name="Fire" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="40" name="Flat Lands" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="42" fixedrot="false" fric="0.2" gid="3" id="53" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="InnovativeScreen" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="54" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="54" name="InnovativeScreen" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="80" originy="24" sync="false" version="2" width="160">
+            <poly data="4,0,0,160,0,160,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="21" fixedrot="false" fric="0.2" gid="3" id="28" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="loss" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="29" static="false">
         <snippets/>
     </actor>
@@ -158,7 +111,7 @@
         <snippets>
             <s enabled="true" id="0">
                 <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="2" list="0" val="1.2"/>
+                <prop id="2" list="0" val="2"/>
                 <prop id="3" list="0" val="false"/>
             </s>
             <s enabled="true" id="1">
@@ -277,6 +230,14 @@
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="44" name="Volume On" readable="false" shared="false">
         <anim across="1" down="1" durations="100" height="90" id="0" loop="true" name="Animation 0" numframes="1" originx="135" originy="45" sync="false" version="2" width="271">
             <poly data="4,0,0,271,0,271,90,0,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="40" fixedrot="false" fric="0.2" gid="3" id="49" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="WinState" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="50" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="50" name="WinState" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="46" id="0" loop="true" name="Animation 0" numframes="1" originx="72" originy="23" sync="false" version="2" width="145">
+            <poly data="4,0,0,145,0,145,46,0,46" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
 </pack>

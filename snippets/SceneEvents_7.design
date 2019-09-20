@@ -1,2 +1,91 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-31-1 comment="false" x="26" y="40">
+                    <int id="0" val="8"/>
+                </set-val-31-1>
+                <if comment="false" x="26" y="60">
+                    <group eventID="2" id="-1">
+                        <create-actor3 comment="false" x="37" y="90">
+                            <actortype eid="1" id="0"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="1" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <get-wh comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="1" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-wh>
+                            </minus>
+                            <get-xy comment="false" id="2" x="0" y="0">
+                                <ACTOR eid="1" id="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-val-31-2 comment="false" x="37" y="135">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </set-val-31-2>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="4" id="0">
+        <event-group-create-kill comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-val-31-1 comment="false" x="26" y="47">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-val-31-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-val-31-1>
+            </group>
+            <int id="0" val="1"/>
+            <actorgroup eid="4" id="1"/>
+        </event-group-create-kill>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="5" id="-1">
+                        <scene-change-through comment="false" x="37" y="70">
+                            <scene eid="8" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val=".25"/>
+                        </scene-change-through>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-31-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </less>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <scene-change-through comment="false" x="26" y="42">
+                    <scene eid="6" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val=".25"/>
+                </scene-change-through>
+            </group>
+            <control eid="8" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="6" id="-1"/>
+</groups>

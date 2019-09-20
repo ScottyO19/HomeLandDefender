@@ -15,6 +15,9 @@
         <actor a="0.0" aid="4" c="false" group="4" id="5" name="MiG15 4" order="3" sx="1.0" sy="1.0" x="273" y="83" z="0"/>
         <actor a="0.0" aid="5" c="false" group="4" id="5" name="MiG15 5" order="4" sx="1.0" sy="1.0" x="368" y="82" z="0"/>
         <actor a="0.0" aid="6" c="false" group="4" id="5" name="MiG15 6" order="5" sx="1.0" sy="1.0" x="467" y="82" z="0"/>
+        <actor a="0.0" aid="7" c="false" group="4" id="47" name="Bomber 7" order="6" sx="1.0" sy="1.0" x="55" y="158" z="0"/>
+        <actor a="0.0" aid="8" c="false" group="4" id="47" name="Bomber 8" order="7" sx="1.0" sy="1.0" x="466" y="166" z="0"/>
+        <actor a="0.0" aid="9" c="false" group="4" id="47" name="Bomber 9" order="8" sx="1.0" sy="1.0" x="270" y="162" z="0"/>
     </actors>
     <snippets>
         <s enabled="true" id="35"/>
