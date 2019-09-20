@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <receive-message comment="false" x="15" y="15">
-            <group eventID="-1" id="-1">
-                <play-sound4 comment="false" x="26" y="40">
+        <receive-message comment="false" x="28" y="53">
+            <group eventID="1" id="-1">
+                <play-sound-channel comment="false" x="39" y="78">
                     <int id="0" val="0"/>
-                    <sound eid="var" id="1" vid="8"/>
-                </play-sound4>
-                <repeat comment="false" x="26" y="67">
-                    <group eventID="-1" id="-1">
-                        <create-actor3 comment="false" x="37" y="92">
+                    <sound eid="15" id="1"/>
+                    <int id="2" val="0"/>
+                </play-sound-channel>
+                <repeat comment="false" x="39" y="105">
+                    <group eventID="1" id="-1">
+                        <create-actor3 comment="false" x="50" y="130">
                             <actortype eid="11" id="0"/>
                             <plus comment="false" id="1" x="0" y="0">
                                 <get-xy comment="false" id="0" x="0" y="0">
@@ -33,7 +34,7 @@
                             </plus>
                             <int id="3" val="0"/>
                         </create-actor3>
-                        <push-shove2 comment="false" x="37" y="137">
+                        <push-shove2 comment="false" x="50" y="175">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <randint comment="false" id="2" x="0" y="0">
@@ -45,9 +46,9 @@
                     </group>
                     <get-val-2-1 comment="false" id="0" x="0" y="0"/>
                 </repeat>
-                <repeat comment="false" x="26" y="181">
-                    <group eventID="-1" id="-1">
-                        <create-actor3 comment="false" x="37" y="206">
+                <repeat comment="false" x="39" y="219">
+                    <group eventID="1" id="-1">
+                        <create-actor3 comment="false" x="50" y="244">
                             <actortype eid="13" id="0"/>
                             <plus comment="false" id="1" x="0" y="0">
                                 <get-xy comment="false" id="0" x="0" y="0">
@@ -71,7 +72,7 @@
                             </plus>
                             <int id="3" val="0"/>
                         </create-actor3>
-                        <push-shove2 comment="false" x="37" y="251">
+                        <push-shove2 comment="false" x="50" y="289">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <randint comment="false" id="2" x="0" y="0">

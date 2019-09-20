@@ -43,7 +43,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -62,62 +61,26 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_7 extends SceneScript
+class Design_43_43_ClickSound extends ActorScript
 {
-	public var _WinNumber:Float;
-	public var _Assister:Actor;
 	
 	
-	public function new(dummy:Int, dummy2:Engine)
+	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
-		nameMap.set("WinNumber", "_WinNumber");
-		_WinNumber = 0.0;
-		nameMap.set("Assister", "_Assister");
+		super(actor);
+		nameMap.set("Actor", "actor");
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		_WinNumber = 8;
-		if(((Engine.engine.getGameAttribute("Assist") : Bool) == true))
+		/* =========================== On Actor =========================== */
+		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
 		{
-			createRecycledActor(getActorType(1), (getActor(1).getX() - (getActor(1).getWidth())), getActor(1).getY(), Script.FRONT);
-			_Assister = getLastCreatedActor();
-		}
-		
-		/* ======================== When Creating ========================= */
-		loopSoundOnChannel(getSound(55), 0);
-		
-		/* ======================= Member of Group ======================== */
-		addWhenTypeGroupKilledListener(getActorGroup(4), function(eventActor:Actor, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
+			if(wrapper.enabled && 3 == mouseState)
 			{
-				_WinNumber = (_WinNumber - 1);
-			}
-		});
-		
-		/* =========================== Keyboard =========================== */
-		addKeyStateListener("ESC", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && pressed)
-			{
-				switchScene(GameModel.get().scenes.get(6).getID(), null, createCrossfadeTransition(.25));
-			}
-		});
-		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				if((_WinNumber < 1))
-				{
-					switchScene(GameModel.get().scenes.get(8).getID(), null, createCrossfadeTransition(.25));
-				}
+				playSoundOnChannel(getSound(57), 0);
 			}
 		});
 		
