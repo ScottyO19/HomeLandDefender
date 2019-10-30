@@ -53,6 +53,7 @@
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Fired" hidden="true" id="10" name="_Fired" order="10"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="Y Offset" hidden="false" id="11" name="_YOffset" order="11"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="X Offset" hidden="false" id="12" name="_XOffset" order="12"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Ammo" hidden="false" id="13" name="_Ammo" order="13"/>
         <blocks/>
         <events>
             <event displayName="Custom Event" enabled="true" id="1" name="event-custom" order="1" repeats="true"/>
