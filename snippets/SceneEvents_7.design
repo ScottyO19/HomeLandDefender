@@ -3,12 +3,15 @@
     <group eventID="2" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="2" id="-1">
-                <set-val-31-1 comment="false" x="26" y="40">
+                <set-game-val-5 comment="false" x="26" y="40">
+                    <int id="0" val="11"/>
+                </set-game-val-5>
+                <set-val-31-1 comment="false" x="26" y="60">
                     <int id="0" val="8"/>
                 </set-val-31-1>
-                <if comment="false" x="26" y="60">
+                <if comment="false" x="26" y="80">
                     <group eventID="2" id="-1">
-                        <create-actor3 comment="false" x="37" y="90">
+                        <create-actor3 comment="false" x="37" y="110">
                             <actortype eid="1" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <get-xy comment="false" id="0" x="0" y="0">
@@ -26,7 +29,7 @@
                             </get-xy>
                             <int id="3" val="0"/>
                         </create-actor3>
-                        <set-val-31-2 comment="false" x="37" y="135">
+                        <set-val-31-2 comment="false" x="37" y="155">
                             <ACTOR eid="lastcreated" id="0"/>
                         </set-val-31-2>
                     </group>
@@ -100,4 +103,26 @@
         </init>
     </group>
     <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <draw-text comment="false" x="26" y="40">
+                    <int id="0" val="Ammo:"/>
+                    <int id="1" val="12"/>
+                    <int id="2" val="11"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="60">
+                    <get-game-val-5 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="75"/>
+                    <int id="2" val="11"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="85">
+                    <int id="0" val=" /11"/>
+                    <int id="1" val="80"/>
+                    <int id="2" val="11"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="8" id="-1"/>
 </groups>

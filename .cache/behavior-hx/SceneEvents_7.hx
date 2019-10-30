@@ -81,6 +81,7 @@ class SceneEvents_7 extends SceneScript
 	{
 		
 		/* ======================== When Creating ========================= */
+		Engine.engine.setGameAttribute("Ammo", 11);
 		_WinNumber = 8;
 		if(((Engine.engine.getGameAttribute("Assist") : Bool) == true))
 		{
@@ -118,6 +119,17 @@ class SceneEvents_7 extends SceneScript
 				{
 					switchScene(GameModel.get().scenes.get(8).getID(), null, createCrossfadeTransition(.25));
 				}
+			}
+		});
+		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				g.drawString("" + "Ammo:", 12, 11);
+				g.drawString("" + (Engine.engine.getGameAttribute("Ammo") : Float), 75, 11);
+				g.drawString("" + " /11", 80, 11);
 			}
 		});
 		

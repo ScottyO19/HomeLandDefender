@@ -202,10 +202,11 @@
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="2" name="init" order="1" repeats="true"/>
-            <event displayName="Actor Created" enabled="true" id="4" name="event-group-create-kill" order="5" repeats="true"/>
+            <event displayName="Actor Created" enabled="true" id="4" name="event-group-create-kill" order="3" repeats="true"/>
             <event displayName="Updating" enabled="true" id="5" name="step" order="7" repeats="true"/>
             <event displayName="Keyboard" enabled="true" id="6" name="event-key-press-release" order="6" repeats="true"/>
             <event displayName="Created" enabled="true" id="7" name="init" order="2" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="8" name="draw" order="8" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="11" attachedevent="true" class="scripts.ActorEvents_11" classname="scripts.ActorEvents_11" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="33" name="ActorEvents_11" oid="-1" package="scripts." shared="false" type="actor">
