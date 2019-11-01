@@ -10,10 +10,10 @@
         <e enabled="false" id="test-flash"/>
     </exts>
     <bundles>
-        <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="Mac App Store" version="1.0"/>
         <bundle id="com.company.gamename" internalVersion="1" name="My Game" store="App Store" version="1.0"/>
-        <bundle author="" id="com.yourcompany.gamename" internalVersion="1" metroColor="-12566464" name="" store="Windows Store" version="1.0"/>
         <bundle id="com.company.gamename" internalVersion="1" name="My Game" store="Google Play" version="1.0"/>
+        <bundle author="" id="com.yourcompany.gamename" internalVersion="1" metroColor="-12566464" name="" store="Windows Store" version="1.0"/>
+        <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="Mac App Store" version="1.0"/>
     </bundles>
     <scales>
         <scale detailed="1x" id="0" name="1x" size="1.0"/>
@@ -90,10 +90,10 @@
         <number cid="-1" id="5" name="Ammo" save="true" value="0.0"/>
         <number cid="-1" id="3" name="Counter" save="true" value="0.0"/>
         <boolean cid="-1" id="2" name="Slide and Increase Speed" save="true" value="false"/>
-        <number cid="0" id="9" name="PlayerY" save="true" value="1"/>
-        <number cid="-1" id="8" name="Player_Y" save="true" value="0"/>
-        <number cid="-1" id="6" name="Player_x" save="true" value="0"/>
-        <number cid="0" id="7" name="PlayerX" save="true" value="0"/>
+        <number cid="0" id="9" name="PlayerY" save="true" value="1.0"/>
+        <number cid="-1" id="8" name="Player_Y" save="true" value="0.0"/>
+        <number cid="-1" id="6" name="Player_x" save="true" value="0.0"/>
+        <number cid="0" id="7" name="PlayerX" save="true" value="0.0"/>
         <boolean cid="-1" id="4" name="Assist" save="true" value="false"/>
         <boolean cid="-1" id="0" name="Move Right" save="true" value="true"/>
     </attributes>

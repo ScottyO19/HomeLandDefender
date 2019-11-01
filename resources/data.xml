@@ -209,7 +209,7 @@
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="10" name="Player Projectile" readable="false" shared="false">
-        <anim across="1" down="1" durations="100" height="32" id="0" loop="true" name="Animation 0" numframes="1" originx="17" originy="11" sync="false" version="2" width="32">
+        <anim across="1" down="1" durations="100" height="23" id="0" loop="true" name="Animation 0" numframes="1" originx="17" originy="11" sync="false" version="2" width="34">
             <poly data="4,0,0,17,0,17,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
