@@ -123,6 +123,7 @@ class Design_9_9_2WayControl extends ActorScript
 				{
 					_customEvent_moveLeft();
 					actor.setYVelocity(0);
+					playSoundOnChannel(getSound(64), 1);
 				}
 				else
 				{
@@ -130,6 +131,7 @@ class Design_9_9_2WayControl extends ActorScript
 					{
 						_customEvent_moveRight();
 						actor.setYVelocity(0);
+						playSoundOnChannel(getSound(64), 1);
 					}
 				}
 				if((actor.getXVelocity() > topSpeed))

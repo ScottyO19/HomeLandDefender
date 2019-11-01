@@ -74,6 +74,17 @@ class ActorEvents_5 extends ActorScript
 	override public function init()
 	{
 		
+		/* ======================= Every N seconds ======================== */
+		runPeriodically(1000 * 4, function(timeTask:TimedTask):Void
+		{
+			if(wrapper.enabled)
+			{
+				playSoundOnChannel(getSound(63), 0);
+				createRecycledActor(getActorType(60), actor.getXCenter(), actor.getYCenter(), Script.FRONT);
+				getLastCreatedActor().applyImpulse(0, 370, 12);
+			}
+		}, actor);
+		
 	}
 	
 	override public function forwardMessage(msg:String)

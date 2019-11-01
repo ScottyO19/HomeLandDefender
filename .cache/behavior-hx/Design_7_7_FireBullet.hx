@@ -148,7 +148,7 @@ class Design_7_7_FireBullet extends ActorScript
 		nameMap.set("X Offset", "_XOffset");
 		_XOffset = 0.0;
 		nameMap.set("Ammo", "_Ammo");
-		_Ammo = 0;
+		_Ammo = 0.0;
 		
 	}
 	

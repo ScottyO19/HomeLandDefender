@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="2" desc="" eventsnippetid="46" extheight="544" extwidth="704" extx="-32" exty="-32" format="4.0.1" gravx="-0.0" gravy="0.0" height="480" id="9" name="Level 1 Display" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <color-bg blue="255" green="255" red="255"/>
+        <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="Flat Lands" opacity="100" order="2" rid="40" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="0,255,0" id="2" locked="false" name="Layer 2" opacity="100" order="1" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="64,64,64" id="3" locked="false" name="Layer 3" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="1" name="Player Tank 1" order="0" sx="1.0" sy="1.0" x="312" y="376" z="2"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="19" name="B_Start 3" order="0" sx="0.4148148" sy="0.4888889" x="90" y="197" z="3"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="23" name="B_Settings 4" order="1" sx="0.4074074" sy="0.4888889" x="214" y="196" z="3"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="21" name="B_Quit 5" order="2" sx="0.36296296" sy="0.4888889" x="324" y="198" z="3"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="65" name="BomberPause 6" order="1" sx="4.8378377" sy="4.0" x="301" y="218" z="2"/>
+    </actors>
+    <snippets/>
+    <terrain/>
+    <atlases members="" retainAtlases="true"/>
+</scene>

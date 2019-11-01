@@ -61,33 +61,71 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_1 extends ActorScript
+class Design_44_44_JetShoot extends ActorScript
 {
+	public var _CanFire:Bool;
+	public var _Fired:Bool;
+	public var _XOffset:Float;
+	public var _YOffset:Float;
+	public var _BulletCreated:Actor;
+	public var shooterangle:Float;
+	public var bulletangle:Float;
+	public var speed:Float;
+	public var _Direction:Float;
+	public var _Timer:Float;
+	public var _PlayerActor:Actor;
+	public var bullet:ActorType;
+	public var _bullet:Float;
+	public var _bullet2:Actor;
+	public var _bullet3:ActorType;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("Actor", "actor");
+		nameMap.set("Can Fire?", "_CanFire");
+		_CanFire = true;
+		nameMap.set("Fired", "_Fired");
+		_Fired = false;
+		nameMap.set("X Offset", "_XOffset");
+		_XOffset = 0.0;
+		nameMap.set("Y Offset", "_YOffset");
+		_YOffset = 0.0;
+		nameMap.set("Bullet Created", "_BulletCreated");
+		nameMap.set("Inital Shooter Angle", "shooterangle");
+		shooterangle = 0.0;
+		nameMap.set("Inital Bullet Angle", "bulletangle");
+		bulletangle = 270.0;
+		nameMap.set("Speed", "speed");
+		speed = 0.0;
+		nameMap.set("Direction", "_Direction");
+		_Direction = 0;
+		nameMap.set("Timer", "_Timer");
+		_Timer = 0;
+		nameMap.set("PlayerActor", "_PlayerActor");
+		nameMap.set("Bullet", "bullet");
+		nameMap.set("bullet", "_bullet");
+		_bullet = 0;
+		nameMap.set("bullet_", "_bullet2");
+		nameMap.set("bullet__", "_bullet3");
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================= Member of Group ======================== */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		/* ======================= Every N seconds ======================== */
+		runPeriodically(1000 * 5, function(timeTask:TimedTask):Void
 		{
-			if(wrapper.enabled && sameAsAny(getActorGroup(6),event.otherActor.getType(),event.otherActor.getGroup()))
+			if(wrapper.enabled)
 			{
-				playSoundOnChannel(getSound(62), 0);
-				actor.alpha = ((actor.alpha * 100) - 25) / 100;
-				if(((actor.alpha * 100) <= 0))
-				{
-					recycleActor(actor);
-					switchScene(GameModel.get().scenes.get(4).getID(), null, createCrossfadeTransition(1));
-				}
+				createRecycledActor(_bullet3, (actor.getX() + 50), (actor.getY() + 40), Script.FRONT);
+				_BulletCreated = getLastCreatedActor();
+				_bullet2.setAnimation("2");
+				_bullet2.applyImpulse(((Engine.engine.getGameAttribute("Player_x") : Float) - actor.getX()), ((Engine.engine.getGameAttribute("Player_Y") : Float) - actor.getY()), 100);
 			}
-		});
+		}, actor);
 		
 	}
 	

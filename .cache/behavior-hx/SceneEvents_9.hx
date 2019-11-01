@@ -43,6 +43,7 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
+import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -61,33 +62,23 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_1 extends ActorScript
+class SceneEvents_9 extends SceneScript
 {
+	public var _WinNumber:Float;
+	public var _Assister:Actor;
 	
 	
-	public function new(dummy:Int, actor:Actor, dummy2:Engine)
+	public function new(dummy:Int, dummy2:Engine)
 	{
-		super(actor);
+		super();
+		nameMap.set("WinNumber", "_WinNumber");
+		_WinNumber = 0.0;
+		nameMap.set("Assister", "_Assister");
 		
 	}
 	
 	override public function init()
 	{
-		
-		/* ======================= Member of Group ======================== */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && sameAsAny(getActorGroup(6),event.otherActor.getType(),event.otherActor.getGroup()))
-			{
-				playSoundOnChannel(getSound(62), 0);
-				actor.alpha = ((actor.alpha * 100) - 25) / 100;
-				if(((actor.alpha * 100) <= 0))
-				{
-					recycleActor(actor);
-					switchScene(GameModel.get().scenes.get(4).getID(), null, createCrossfadeTransition(1));
-				}
-			}
-		});
 		
 	}
 	

@@ -7,6 +7,10 @@
                     <int id="0" val="100"/>
                     <int id="1" val="0"/>
                 </set-volume-channel>
+                <set-volume-channel comment="false" x="46" y="71">
+                    <int id="0" val="100"/>
+                    <int id="1" val="1"/>
+                </set-volume-channel>
             </group>
             <ACTOR eid="this" id="0"/>
             <int id="1" val="2"/>

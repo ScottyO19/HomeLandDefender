@@ -80,6 +80,7 @@ class ActorEvents_43 extends ActorScript
 			if(wrapper.enabled && 3 == mouseState)
 			{
 				setVolumeForChannel(100/100, 0);
+				setVolumeForChannel(100/100, 1);
 			}
 		});
 		

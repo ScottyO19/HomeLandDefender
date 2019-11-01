@@ -18,6 +18,7 @@
         <actor a="0.0" aid="7" c="false" group="4" id="47" name="Bomber 7" order="6" sx="1.0" sy="1.0" x="55" y="158" z="0"/>
         <actor a="0.0" aid="8" c="false" group="4" id="47" name="Bomber 8" order="7" sx="1.0" sy="1.0" x="466" y="166" z="0"/>
         <actor a="0.0" aid="9" c="false" group="4" id="47" name="Bomber 9" order="8" sx="1.0" sy="1.0" x="270" y="162" z="0"/>
+        <actor a="0.0" aid="10" c="false" group="3" id="67" name="ShootThem 10" order="9" sx="1.0" sy="1.0" x="9" y="322" z="0"/>
     </actors>
     <snippets>
         <s enabled="true" id="35"/>
